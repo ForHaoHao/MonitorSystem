@@ -1,7 +1,7 @@
-package router
+package routers
 
 import (
-	"controllers"
+	"MonitorSystem/controllers"
 
 	"net/http"
 

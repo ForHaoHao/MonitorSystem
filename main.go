@@ -3,12 +3,11 @@ package main
 import (
 	"fmt"
 	"net/http"
-
-	"router"
 )
+import "MonitorSystem/routers"
 
 func main() {
-	routers := router.NewRouter()
+	routers := routers.NewRouter()
 	err := http.ListenAndServe(":8080", routers)
 
 	if err != nil {
