@@ -21,6 +21,8 @@ func init() {
 	register("GET", "/api/SayHello", controllers.SayHello, nil)
 }
 
+// NewRouter
+// @return *mux.Router
 func NewRouter() *mux.Router {
 	router := mux.NewRouter()
 	for _, route := range routes {
